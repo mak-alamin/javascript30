@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum-Kit</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 200px;
+        }
+        div{
+            display: inline-block;
+            padding: 20px 40px;
+            font-size: 40px;
+            background-color: tomato;
+            color: white;
+            transition: .05s all;
+        }
+        .playing{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="a" data-key="65"> A </div>
+    <div class="s" data-key="83"> S </div>
+    <div class="d" data-key="68"> D </div>
+    <div class="f" data-key="70"> F </div>
+    <div class="g" data-key="71"> G </div>
+    <div class="h" data-key="72"> H </div>
+    <div class="j" data-key="74"> J </div>
+    <div class="k" data-key="75"> K </div>
+    <div class="l" data-key="76"> L </div>
+
+    <audio src="sounds/a.mp3" data-key="65"></audio>
+    <audio src="sounds/s.mp3" data-key="83"></audio>
+    <audio src="sounds/d.mp3" data-key="68"></audio>
+    
+    <audio src="sounds/a.mp3" data-key="70"></audio>
+    <audio src="sounds/s.mp3" data-key="71"></audio>
+    <audio src="sounds/d.mp3" data-key="72"></audio>
+    
+    <audio src="sounds/a.mp3" data-key="74"></audio>
+    <audio src="sounds/s.mp3" data-key="75"></audio>
+    <audio src="sounds/d.mp3" data-key="76"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
