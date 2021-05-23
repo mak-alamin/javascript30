@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --spacing: 40px;
+    --blur: 0px;
+    --base-color: #1d9ebe;
+}
+
+img{
+    padding: var(--spacing);
+    background-color: var(--base-color);
+    filter: blur(var(--blur));
+}
+h1 span {
+    color: var(--base-color);
+}
