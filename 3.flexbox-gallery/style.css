@@ -1,0 +1,37 @@
+.panels{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.panel{
+    background-color: rgba(25, 219, 219, 0.726);
+    padding: 20px;
+    text-align: center;
+    height: 190px;
+    overflow: hidden;
+    flex: 1;
+    margin: 5px;
+    transition: .3s all;
+}
+
+.panel.open{
+    flex: 5;
+}
+.panel > * {
+    transition: .3s all;
+}
+
+.panel > *:first-child{
+    transform: translateY(-190%);
+}
+.panel > *:last-child{
+    transform: translateY(190%);
+}
+
+.panel.active > *:first-child{
+    transform: translateY(0);
+}
+.panel.active > *:last-child{
+    transform: translateY(0);
+}
