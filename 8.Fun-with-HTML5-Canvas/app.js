@@ -36,7 +36,7 @@ function lineDraw(e){
         ctx.lineWidth = 5;
     }
 
-    ctx.lineWidth = ctx.lineWidth + 0.5 ;
+    // ctx.lineWidth = ctx.lineWidth + 0.5;
 }
 
 canvas.addEventListener('mousedown', (e) => {
